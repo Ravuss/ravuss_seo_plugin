@@ -1,8 +1,8 @@
 === Plugin Name ===
 
-Contributors: yourname
+Contributors: Ravuss.com
 
-Donate link: http://yoursite.com
+Donate link: https://ravuss.com
 
 Tags: seo, simple, clean, simplest seo plugin
 
