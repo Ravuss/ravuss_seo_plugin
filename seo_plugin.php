@@ -3,9 +3,10 @@
  * @package Akismet
  */
 /*
-Plugin Name: SEO
+Plugin Name: Ravuss Seo Plugin
 Plugin URI: https://ravuss.com
-Description: MALLKO MALKO MALKO
+Description: This is the simplest and easiest SEO Plugin for your website. This plugin is being consistently updated until it gives all the necessary features for your website.
+You can use this plugin with no knowledge at all. 
 Version: 0.1
 Requires at least: 5.8
 Requires PHP: 5.6.20

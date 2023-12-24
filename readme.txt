@@ -15,16 +15,13 @@ Stable tag: 6.4.2
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-A simple description
+Simplest Seo Plugin
 == Description ==
-A longer description with a
-- list
+This is the simplest and easiest SEO Plugin for your website. This plugin is being consistently updated until it gives all the necessary features for your website.
+You can use this plugin with no knowledge at all. 
 
-- of
-
-- features
 == Installation ==
-This section describes how to install the plugin and get it working.
+
 1. Upload [Ravuss Seo Plugin](https://github.com/Ravuss/ravuss_seo_plugin) to the `/wp-content/plugins/` directory
 
 2. Activate the plugin through the 'Plugins' menu in WordPress
