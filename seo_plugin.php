@@ -374,14 +374,12 @@ function ravuss_seo_plugin_get_title( $title ) {
 	$title = get_bloginfo();
 
 	if(is_home()){
-		$is_home_title_custom_key = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM `".get_ravuss_seo_plugin_table_name()."` WHERE seo_key = 'home_title_custom_key' AND seo_value = 1" ) );
-		if(!empty($is_home_title_custom_key)){
 			$home_title_value = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM `".get_ravuss_seo_plugin_table_name()."` WHERE seo_key = 'home_title_value'" ) );
 			if(!empty($home_title_value)){
 				//$title = str_replace("%"."site_title%", get_bloginfo(), $home_title_value->seo_value);
-				$title = $home_title_value->seo_value;
+				$title = ravuss_seo_plugin_decode_text(true, 'home_title_value');
 			}
-		}
+		
 
 	}elseif(is_single()){
 		$single_title_value = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM `".get_ravuss_seo_plugin_table_name()."` WHERE seo_key = 'single_title_value'" ) );
