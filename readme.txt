@@ -6,11 +6,11 @@ Donate link: https://ravuss.com
 
 Tags: seo, simple, clean, simplest seo plugin
 
-Requires at least: 4.3
+Requires at least: 5.8
 
 Tested up to: 6.4.2
 
-Stable tag: 6.4.2
+Stable tag: 0.1
 
 License: GPLv2 or later
 
