@@ -3,7 +3,7 @@
  * @package Akismet
  */
 /*
-Plugin Name: Ravuss Seo Plugin
+Plugin Name: Ravuss Seo
 Plugin URI: https://ravuss.com
 Description: This is the simplest and easiest SEO Plugin for your website. This plugin is being consistently updated until it gives all the necessary features for your website.
 You can use this plugin with no knowledge at all. 
@@ -152,11 +152,11 @@ function ravuss_seo_plugin_settings() {
 		$sql_title_value = 'home_title_value';
 		$sql_description_value = 'home_description_value';
 	}elseif($current_settings_page == 'ravuss_seo_plugin_pages_slug'){
-		$sql_title_value = 'single_page_title_value';
-		$sql_description_value = 'single_page_description_value';
+		$sql_title_value = 'pages_title_value';
+		$sql_description_value = 'page_description_value';
 	}elseif($current_settings_page == 'ravuss_seo_plugin_categories_slug'){
-		$sql_title_value = 'single_categories_title_value';
-		$sql_description_value = 'single_categories_description_value';
+		$sql_title_value = 'categories_title_value';
+		$sql_description_value = 'categories_description_value';
 	}else{
 		$sql_title_value = '';
 		$sql_description_value = '';
@@ -286,12 +286,12 @@ function ravuss_seo_plugin_get_title( $title ) {
 	if(is_home()){
 		$title = ravuss_seo_plugin_decode_text(true, 'home_title_value');
 	}elseif(is_single()){
-		$title = ravuss_seo_plugin_decode_text(true, 'single_title_value');
+		$title = ravuss_seo_plugin_decode_text(true, 'posts_title_value');
 	}elseif(is_page()){
-		$title = ravuss_seo_plugin_decode_text(true, 'page_title_value');
+		$title = ravuss_seo_plugin_decode_text(true, 'pages_title_value');
 		
 	}elseif(is_category()){
-		$title = ravuss_seo_plugin_decode_text(true, 'category_title_value');
+		$title = ravuss_seo_plugin_decode_text(true, 'categories_title_value');
 	}else{
 		$title = '';
 	}
@@ -308,9 +308,13 @@ function ravuss_seo_plugin_description(){
  	if(is_home()){
 		$description = ravuss_seo_plugin_decode_text(true, 'home_description_value');
 	}elseif(is_single()){
-		$description = ravuss_seo_plugin_decode_text(true, 'single_description_value');
+		$description = ravuss_seo_plugin_decode_text(true, 'posts_description_value');
 	}elseif(is_page()){
-		$description = ravuss_seo_plugin_decode_text(true, 'page_description_value');
+		$description = ravuss_seo_plugin_decode_text(true, 'pages_description_value');
+	}elseif(is_category()){
+		$description = ravuss_seo_plugin_decode_text(true, 'categories_description_value');
+	}else{
+		$description = '';
 	}
 
 	if(!empty($description)){
